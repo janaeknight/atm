@@ -1,0 +1,19 @@
+body { margin: 0; }
+
+:root {
+    --mainColor1: #624E83;
+
+    --offColor1: whitesmoke;
+}
+
+header, footer {
+    background-color: var(--mainColor1) !important;
+    height: 60px; color: var(--offColor1);
+}
+header a { color: var(--offColor1) };
+header a:hover { color: gainsboro; }
+footer {
+    width: 100%;
+    position: absolute; bottom: 0;
+    height: 30px; 
+}
