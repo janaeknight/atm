@@ -31,7 +31,7 @@ footer {
 }
 .activity-alert a:hover { text-decoration: none; color: auto; }
 .activity-alert span {
-    display: inline-block; margin-right: 1px;
+    justify-self: flex-end; justify-content: flex-end; justify-self: flex-end; text-justify: distribute-all-lines;
 }
 
 
