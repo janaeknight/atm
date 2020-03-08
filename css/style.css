@@ -15,9 +15,9 @@ header, footer {
 header a { color: var(--offColor1) };
 header a:hover { color: gainsboro; }
 footer {
-    width: 100%;
-    position: absolute; bottom: 0;
-    height: 30px; 
+    position: relative;
+    width: 100%; height: 30px;
+    bottom: 0;
 }
 
 /******************* #loginScreen *******************/
@@ -68,21 +68,6 @@ footer {
 
 /******************* #mainScreen *******************/
 
-.activity-alert {
-    display: flex; flex-direction: row;
-    width: 98%; height: 40px;
-    
-    align-items: center;
-    margin: 15px 0; padding: 5px 0;
-}
-.activity-alert img {
-    height: 35px; border-radius: 100%; padding-right: 14px;
-}
-.activity-alert a:hover { text-decoration: none; color: auto; }
-.activity-alert span {
-    justify-self: flex-end; justify-content: flex-end; justify-self: flex-end; text-justify: distribute-all-lines;
-}
-
 #mainScreen aside {
     margin: 25px auto;
 }
@@ -95,6 +80,27 @@ footer {
     font-style: italic; padding-left: 18px;
     cursor: pointer !important;
 }
+#mainScreen a:hover { cursor: pointer !important; }
+
+.activity-alert {
+    display: flex; flex-direction: row;
+    width: 98%; height: 40px;
+    
+    align-items: center;
+    margin: 15px 0; padding: 5px 0;
+}
+.activity-alert img {
+    height: 35px; padding-right: 14px;
+}
+.activity-alert a:hover { text-decoration: none; color: auto; }
+.activity-alert span {
+    justify-self: flex-end; justify-content: flex-end; justify-self: flex-end; text-justify: distribute-all-lines;
+}
+.activity-alert .row {
+    width: inherit;
+}
+
+.quickPay { margin-top: 50px; }
 
 /*
 
@@ -102,4 +108,5 @@ footer {
 
 */
 
-#mainScreen { display: none; }
+#mainScreen { display: block; }
+#loginScreen { display: none; }
