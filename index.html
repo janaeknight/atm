@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>First Bank</title>
+    <title>Bank of Bank</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
@@ -22,11 +22,10 @@
     <meta name="twitter:card" content="" />
     
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-    <script src="js/jquery.js"></script>
+    <script src="java/jquery.js"></script>
 
     <!--
         ʸᵉᵃʰ ᵖʳᵒᵛᵉ ᶦᵗ ᵃˢˢʰᵒˡᵉ ʷᵉ'ʳᵉ ᵗʰᵉ ᵃʳᵐʸ
@@ -50,11 +49,13 @@
 
     <div id="loginScreen">
         <div id="loginApp">
-            <input type="email" id="" placeholder="Email" required>
-            <input type="password" id="" placeholder="Password" required>
-            <div class="captcha">
-                <span>I'm not a robot.</span>
-            </div>
+            <img src="images/bob-logo.png">
+            <form>
+                <input type="input" id="emailInput" placeholder="&nbsp;&nbsp;Email or Phone">
+                <input type="password" id="passInput" placeholder="&nbsp;&nbsp;Password" required>
+                <br><button type="submit" id="loginBtn">Log In</button><br>
+            </form>
+            <a id="loginTroubleBtn">Having trouble logging in?</a>
         </div>
     </div>
     <div class="screen" id="mainScreen">
@@ -109,6 +110,6 @@
         </footer>
     </div>
 
-    <script src="js/javascript.js"></script>
+    <script src="java/javascript.js"></script>
 </body>
 </html>
