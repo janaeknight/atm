@@ -60,14 +60,14 @@
     </div>
     <div class="screen" id="mainScreen">
         <header>
-            <div class="container">
+            <!--div class="container">
                 <div class="nav-brand col-xs-5">
                     <img src="images/bob-logo.png" height="52">
                 </div>
                 <nav class="nav-links col-xs-7">
                     <a><i class="fa fa-user-circle-o"></i> Change Display Name</a>
                 </nav>
-            </div>
+            </div-->
         </header>
         <div class="container">
             <div class="col-sm-8"> 
@@ -76,7 +76,7 @@
                 <div class="bankbalance">
                     <br>
                     <p><i>BankBalance:</i></p>
-                    <span id="balance">100000</span>
+                    <span id="balance">512.18</span>
                     <br>
                 </div>
                 <br><br>
@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </div> <!-- Transfer +535 -->
-                        <div class="activity-alert">
+                        <!--div class="activity-alert">
                             <img src="images/z.png">
                             <div class="row">
                                 <div class="col-xs-8">
@@ -159,8 +159,8 @@
                                     <span>- $<span class="transactAmount" value="">00</span></span>
                                 </div>
                             </div>
-                        </div> <!--  -->
-                        <div class="activity-alert">
+                        </div--> <!--  -->
+                        <!--div class="activity-alert">
                             <img src="images/z.png">
                             <div class="row">
                                 <div class="col-xs-8">
@@ -170,12 +170,12 @@
                                     <span>- $<span class="transactAmount" value="">00</span></span>
                                 </div>
                             </div>
-                        </div> <!--  -->
+                        </div--> <!--  -->
                     </div>
                 </div>
             </div>
             <div class="col-sm-4 quickPay">
-                <h4>Quick Pay Bills with <em>QuickPayPro</em></h4>
+                <!--h4>Quick Pay Bills with <em>QuickPayPro</em></h4>
                 <aside id="">
                     <img src="images/logo-entergy.png">
                     <span><b>Amount Due: </b>$ 
@@ -189,11 +189,27 @@
                         <span class="payThisAmount">00</span>
                         <span class="payThisBtn">Pay Now »</span>
                     </span>
-                </aside>
+                </aside-->
+                <form name="withdrawBusy" id="withdrawBusy">
+                    <input type="input" id="withdrawInput" disabled>
+                    <span value="1" onClick="withdrawBusy.withdrawInput.value += '1' ">1</span>
+                    <span value="2" onClick="withdrawBusy.withdrawInput.value += '2' ">2</span>
+                    <span value="3" onClick="withdrawBusy.withdrawInput.value += '3' ">3</span>
+                    <span value="4" onClick="withdrawBusy.withdrawInput.value += '4' ">4</span>
+                    <span value="5" onClick="withdrawBusy.withdrawInput.value += '5' ">5</span>
+                    <span value="6" onClick="withdrawBusy.withdrawInput.value += '6' ">6</span>
+                    <span value="7" onClick="withdrawBusy.withdrawInput.value += '7' ">7</span>
+                    <span value="8" onClick="withdrawBusy.withdrawInput.value += '8' ">8</span>
+                    <span value="9" onClick="withdrawBusy.withdrawInput.value += '9' ">9</span>
+                    <span value="0" onClick="withdrawBusy.withdrawInput.value += '0' ">0</span>
+                    <span value="." onClick="withdrawBusy.withdrawInput.value += '.' ">.</span>
+                    <span onClick="withdrawBusy.withdrawInput.value = '' ">C</span>
+                    <span onClick="withdrawal()">Withdraw!</span>
+                </form> <!-- withdrawBusy -->
             </div>
         </div>
         <footer>
-            <p>&copy;2020 First Bank of Bank</p>
+            <!--p>&copy;2020 First Bank of Bank</p-->
         </footer>
     </div>
 
