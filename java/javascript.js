@@ -30,6 +30,15 @@ function withdrawal() {
 
     let balance = document.getElementById("balance").innerText;
     balance = (balance - withdrawAmount).toFixed(2);
+
+    document.getElementById("balance").innerHTML = balance;
+}
+
+function deposit() {
+    var depositAmount = document.getElementById("depositInput").value;
+
+    let balance = document.getElementById("balance").innerText;     
+    balance = (parseFloat(balance)+parseFloat(depositAmount)).toFixed(2)
     
     document.getElementById("balance").innerHTML = balance;
 }
