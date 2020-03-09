@@ -83,11 +83,11 @@ footer {
 #mainScreen a:hover { cursor: pointer !important; }
 
 .bankbalance {
-    border-top: 1px solid darkgray;
-    margin: 20px auto;
+    border-top: 1px solid ghostwhite;
+    border-bottom: 1px solid ghostwhite;
 }
 .bankbalance p {
-    display: inline; font-size: 32px;
+    display: inline; font-size: 22px;
 }
 
 .activity-alert {
