@@ -82,6 +82,14 @@ footer {
 }
 #mainScreen a:hover { cursor: pointer !important; }
 
+.bankbalance {
+    border-top: 1px solid darkgray;
+    margin: 20px auto;
+}
+.bankbalance p {
+    display: inline; font-size: 32px;
+}
+
 .activity-alert {
     display: flex; flex-direction: row;
     width: 98%; height: 40px;
@@ -92,9 +100,11 @@ footer {
 .activity-alert img {
     height: 35px; padding-right: 14px;
 }
+.activity-alert a { color: black; }
 .activity-alert a:hover { text-decoration: none; color: auto; }
 .activity-alert span {
     justify-self: flex-end; justify-content: flex-end; justify-self: flex-end; text-justify: distribute-all-lines;
+    color: darkslategray; 
 }
 .activity-alert .row {
     width: inherit;

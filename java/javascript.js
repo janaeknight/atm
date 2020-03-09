@@ -24,3 +24,13 @@ $("#loginBtn").click(function() {
         }
     }
 });
+
+/*
+    ~~
+
+var activities = $("div.activity-alert").get().sort(function(){ 
+    return Math.round(Math.random())-0.4; //random so we get the right +/- combo
+  }).slice(0,4)
+  $(activities).show();
+
+*/
